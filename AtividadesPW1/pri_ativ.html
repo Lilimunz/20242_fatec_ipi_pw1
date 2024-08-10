@@ -4,14 +4,53 @@
     <title>Atividade 1 de PW1</title>
     <meta name="author" content="Alicia Muniz">
     <meta name="description" content="Primeira atividade lista de usuarios">
-</head>    
+<style>
+table {
+    border: 1px solid black;
+    /*propriedade do css para forma das bordas*/ 
+    width: 70%;
+    margin:auto;
+}
+
+td, th {
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 5px;
+}    
+</style>
+</head>
+    
 <body>
 
 <h1><font color="purple" size="10px">Lista de Usuarios</font></h1>
 
 <p><i>Lista de cadastro de usuarios do sistema</i></p><br>
 
-<a href>Clique aqui para cadastrar um novo</a>
+<a href>Clique aqui para cadastrar um novo</a><br>
 
+table>
+    <tr>
+    <!--para mudar a largura da linha só usar o style="height:tamanhopx"-->    
+      <th>ID</th>
+      <th>Nome</th>
+      <th style="width:70%">E-mail</th>
+      <!--style="width:tamanho% é para colocar um tamanho especifico em uma coluna"-->
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Rebeca Andrade</td>
+      <td>andraderebeca@gmail.com</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Flávia Saraiva</td>
+      <td>flasaraiva@gmail.com</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Julia Soares</td>
+        <td>juliasoares@gmail.com</td>
+      </tr>
+  </table>
 </body>
 </html>
