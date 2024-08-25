@@ -1,0 +1,57 @@
+#titulo {
+    font-family: 'Kalnia Glaze'; font-size: 22px;
+    text-align: center; 
+}
+#form {
+    font-family: 'Kalnia'; 
+    font-size: 17.5px;  
+}
+body {
+    background:linear-gradient(45deg, #9796f0, #fbc7d4);
+    font-family: 'Kalnia'; 
+    font-size: 18.4px;
+}
+textarea, input,#assunto{
+    border: groove 1px #000000; 
+      color: black;
+      /* espaçamento da parede da direita*/
+      padding: 5px;
+   
+      /*margem*/
+      margin: 2px;    
+}
+fieldset { 
+    display: block; /*Exibe como um bloco, ocupando toda a largura disponivel*/
+    margin-left: 0px;
+    margin-right: 2px;
+    padding-top: 0.35em; /* espaçamento do topo */
+    padding-bottom: 0.625em;
+    padding-left: 0.500em;
+    padding-right: 0.800em;
+    border: 2px groove (internal value); /*groove = efeito de profundidade*/
+    border-image: linear-gradient(180deg,#9796f0, #fbc7d4) 5;
+    opacity: 0.9;
+}
+#input[type=radio] { /* Estiliza os inputs do tipo radio */
+    accent-color: rgb(0, 0, 0); /* Define a cor de destaque dos botões de rádio */
+}
+.button { /* Estiliza os elementos com a classe "button" */
+    font-family: 'Kalnia'; 
+    background-image: linear-gradient(180deg, #9796f0, #fbc7d4); /* Gradiente de fundo do botão */
+    border-color: #ee7795, #9796f0;
+    border-style: solid transparent; /* Estilo da borda sólido, mas transparente ao redor */
+    color: #000000;
+    padding: 20px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 3px; /* Margem ao redor do botão*/
+    opacity: 0.7; /* Opacidade do botão, tornando-o um pouco transparente */
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none; /* Remove qualquer decoração de texto (como sublinhado) */
+    cursor: pointer; /* Muda o cursor para uma mão ao passar sobre o botão */
+}
+::placeholder{ /*Muda a cor do placeholder*/
+    color: black;
+}
+.button:hover {opacity: 1} /* Torna o botão totalmente opaco quando o cursor está sobre ele */
