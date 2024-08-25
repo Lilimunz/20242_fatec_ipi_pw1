@@ -2,33 +2,40 @@
 <html lang="eng">
 <head charset="utf-8">
     <title>Atividade 2 de PW1</title>
-    <meta name="author" content="Alicia Muniz">
-    <meta name="description" content="Formularios">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Kalnia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Kalnia Glaze' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-    <h1><font color="red" size="20px">Contato</font></h1>
+    <div id="titulo">
+    <h1>Contato</h1>
+    </div>
     <p><i>Seja bem vindo, preencha o <b>formulário</b> abaixo para:</i></p>
     <ul>
         <li>Duvidas</li>
-        <li>Sugestões</li>
+        <li>Sugestoes</li>
         <li>Criticas</li>
-        <li>Orçamento</li>
+        <li>Orcamento</li>
       </ul>
       <p>Caso queira ver nossos produtos, clique <a href >aqui</a></p><br>
-      <form>
+      <form id="form">
+          <fieldset style="padding-left:5px;border:5px;">    
       Nome: <input type="text" id="nome" required placeholder="Digite o seu nome" pattern="[A-z\s]{6,100}"><br>
       E-mail:<input type="email" id="e-mail" required placeholder="Digite seu e-mail"><br>
       Telefone:<input type="tel" required placeholder="Digite seu telefone" pattern="[0-9]{5}-[0-9]{4}"><br>
       Assunto: <select id="assunto">
           <option>Duvidas</option>
-          <option>Sugestões</option>
+          <option>Sugestoes</option>
           <option>Criticas</option>
-          <option>Orçamento</option>
+          <option>Orcamento</option>
         </select><br>
       Deseja receber uma cópia deste e-mail:<input type="radio" name="copia" value="sim"/> Sim
       <input type="radio" name="copia" value="nao"/> Não<br />
-        Mensagem:<textarea id="msg" rows="5" cols="50" placeholder="Digite sua mensagem"></textarea><br><br>
-        <button>Enviar</button>  
+        Mensagem:<textarea id="msg" rows="5" cols="50" placeholder="Digite sua mensagem"></textarea>
+        </fieldset><br>
+        <button class="button">Enviar</button>  
       </form>
 </body>
 
